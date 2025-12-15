@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
         card.className = "card";
 
         card.innerHTML = `
-          <img src="https://via.placeholder.com/300x450?text=${encodeURIComponent(item.keyword)}">
+         <img src="https://dummyimage.com/300x450/000/fff&text=${encodeURIComponent(item.keyword)}">
           <h3>${item.keyword}</h3>
         `;
 
@@ -32,3 +32,4 @@ document.addEventListener("DOMContentLoaded", () => {
       console.error(err);
     });
 });
+
