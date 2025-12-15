@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Detail Artikel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a href="index.html" class="back">← Kembali</a>
+
+<div class="detail">
+  <h1 id="title"></h1>
+  <p id="content"></p>
+</div>
+
+<script>
+  const params = new URLSearchParams(window.location.search);
+  const title = params.get("title");
+
+  document.getElementById("title").innerText = title || "Judul Artikel";
+  document.getElementById("content").innerText =
+    "Ini adalah konten artikel untuk topik: " + title +
+    ". Konten masih dummy dan bisa kamu ganti nanti.";
+</script>
+
+</body>
+</html>
